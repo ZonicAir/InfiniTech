@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "itech:refined_infini_ingot"
+    }
+  ],
+  "result":
+  {
+    "item": "itech:refined_infini_nugget",
+    "count": 9
+  }
+}

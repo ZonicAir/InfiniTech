@@ -1,0 +1,21 @@
+ {
+   "type": "minecraft:crafting_shaped",
+   "pattern":
+   [
+     "xxx",
+     "xxx",
+     "xxx"
+   ],
+   "key":
+   {
+     "x":
+     {
+       "item": "itech:infini_nugget"
+     }
+   },
+   "result":
+   {
+     "item": "itech:infini_ingot",
+     "count": 1
+   }
+ }

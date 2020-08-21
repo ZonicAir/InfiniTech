@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "itech:block/infini_furnace" },
+    "facing=south": { "model": "itech:block/infini_furnace", "y":  180},
+    "facing=west": { "model": "itech:block/infini_furnace", "y":  270},
+    "facing=east": { "model": "itech:block/infini_furnace", "y":  90}
+  }
+}

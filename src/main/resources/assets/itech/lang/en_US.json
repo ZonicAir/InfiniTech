@@ -1,0 +1,67 @@
+{
+  "itemGroup.infiniTechTab": "InfiniTech",
+
+  "item.itech.infini_nugget": "Infini Nugget",
+  "item.itech.refined_infini_nugget": "Refined Infini Nugget",
+  "item.itech.reinforced_infini_nugget": "Reinforced Infini Nugget",
+
+  "item.itech.infini_dust": "Infini Dust",
+  "item.itech.compressed_infini_dust": "Compressed Infini Dust",
+  "item.itech.refined_infini_dust": "Refined Infini Dust",
+  "item.itech.reinforced_infini_dust": "Reinforced Infini Dust",
+  "item.itech.fiery_infini_dust": "Fiery Infini Dust",
+
+  "item.itech.infini_ingot": "Infini Ingot",
+  "item.itech.refined_infini_ingot": "Refined Infini Ingot",
+  "item.itech.reinforced_infini_ingot": "Reinforced Infini Ingot",
+
+  "item.itech.infini_rod": "Infini Rod",
+  "item.itech.refined_infini_rod": "Refined Infini Rod",
+  "item.itech.reinforced_infini_rod": "Reinforced Infini Rod",
+
+  "item.itech.infini_sword": "Infini Sword",
+  "item.itech.infini_pickaxe": "Infini Pickaxe",
+  "item.itech.infini_shovel": "Infini Shovel",
+  "item.itech.infini_axe": "Infini Axe",
+  "item.itech.infini_hoe": "Infini Hoe",
+
+  "item.itech.refined_infini_sword": "Refined Infini Sword",
+  "item.itech.refined_infini_pickaxe": "Refined Infini Pickaxe",
+  "item.itech.refined_infini_shovel": "Refined Infini Shovel",
+  "item.itech.refined_infini_axe": "Refined Infini Axe",
+  "item.itech.refined_infini_hoe": "Refined Infini Hoe",
+
+  "item.itech.reinforced_infini_sword": "Reinforced Infini Sword",
+  "item.itech.reinforced_infini_pickaxe": "Reinforced Infini Pickaxe",
+  "item.itech.reinforced_infini_shovel": "Reinforced Infini Shovel",
+  "item.itech.reinforced_infini_axe": "Reinforced Infini Axe",
+  "item.itech.reinforced_infini_hoe": "Reinforced Infini Hoe",
+
+  "item.itech.infini_helmet": "Infini Helmet",
+  "item.itech.infini_chestplate": "Infini Chestplate",
+  "item.itech.infini_leggings": "Infini Leggings",
+  "item.itech.infini_boots": "Infini Boots",
+
+  "item.itech.refined_infini_helmet": "Refined Infini Helmet",
+  "item.itech.refined_infini_chestplate": "Refined Infini Chestplate",
+  "item.itech.refined_infini_leggings": "Refined Infini Leggings",
+  "item.itech.refined_infini_boots": "Refined Infini Boots",
+
+  "item.itech.reinforced_infini_helmet": "Reinforced Infini Helmet",
+  "item.itech.reinforced_infini_chestplate": "Reinforced Infini Chestplate",
+  "item.itech.reinforced_infini_leggings": "Reinforced Infini Leggings",
+  "item.itech.reinforced_infini_boots": "Reinforced Infini Boots",
+
+  "item.itech.infini_fuel": "Infini Fuel",
+
+  "block.itech.infini_block": "Infini Block",
+  "block.itech.infini_ore": "Infini Ore",
+  "block.itech.fiery_infini_ore": "Fiery Infini Ore",
+  "block.itech.refined_infini_block": "Refined Infini Block",
+  "block.itech.reinforced_infini_block": "Reinforced Infini Block",
+
+  "block.itech.infini_furnace": "Infini Furnace"
+
+
+
+}

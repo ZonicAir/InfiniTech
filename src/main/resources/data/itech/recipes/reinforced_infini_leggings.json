@@ -1,0 +1,21 @@
+ {
+   "type": "minecraft:crafting_shaped",
+   "pattern":
+   [
+     "xxx",
+     "x x",
+     "x x"
+   ],
+   "key":
+   {
+     "x":
+     {
+       "item": "itech:reinforced_infini_ingot"
+     }
+   },
+   "result":
+   {
+     "item": "itech:reinforced_infini_leggings",
+     "count": 1
+   }
+ }

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "itech:items/refined_infini_rod"
+  }
+}

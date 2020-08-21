@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ono",
+    "ici",
+    "ono"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "item": "minecraft:obsidian"
+    },
+    "i":
+    {
+        "item":"minecraft:iron_ingot"
+    },
+    "c":
+    {
+        "item":"itech:compressed_infini_dust"
+    },
+    "n":
+    {
+        "item":"itech:infini_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "itech:refined_infini_dust",
+    "count": 1
+  }
+}
