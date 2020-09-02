@@ -56,11 +56,31 @@
 
   "block.itech.infini_block": "Infini Block",
   "block.itech.infini_ore": "Infini Ore",
+  "block.itech.infini_fuel_ore": "Infini Fuel Ore",
+  "block.itech.infini_fuel_block": "Block of Infini Fuel",
   "block.itech.fiery_infini_ore": "Fiery Infini Ore",
   "block.itech.refined_infini_block": "Refined Infini Block",
   "block.itech.reinforced_infini_block": "Reinforced Infini Block",
+  "block.itech.infini_dirt": "Infini Dirt",
+  "block.itech.infini_grass_block": "Infini Grass",
 
-  "block.itech.infini_furnace": "Infini Furnace"
+
+  "block.itech.infini_wood": "Infini Wood",
+  "block.itech.infini_wood_planks": "Infini Wood Planks",
+  "block.itech.infini_stairs": "Infini Stairs",
+  "block.itech.infini_fence": "Infini Fence",
+  "block.itech.infini_button": "Infini Button",
+  "block.itech.infini_pressure_plate": "Infini Pressure Plate",
+
+  "block.itech.infini_storage_crate": "Infini Storage Crate",
+  "container.infini_storage_crate": "Infini Storage Crate",
+
+  "block.itech.reinforced_infini_storage_crate": "Reinforced Infini Storage Crate",
+  "container.reinforced_infini_storage_crate": "Reinforced Infini Storage Crate",
+
+  "block.itech.infini_furnace": "Infini Furnace",
+
+  "biome.itech.infini_forest": "Infini Forest"
 
 
 

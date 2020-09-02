@@ -1,18 +1,8 @@
 package com.zonicair.infinitech.items;
 
-import com.zonicair.infinitech.util.helpers.KeyboardHelper;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.item.ItemEntity;
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.world.World;
-
-import java.util.List;
 
 public class InfiniFuel extends Item {
     public InfiniFuel(Properties properties) {

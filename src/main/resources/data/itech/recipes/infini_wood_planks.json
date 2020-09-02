@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "itech:infini_wood"
+    }
+  ],
+  "result":
+  {
+    "item": "itech:infini_nugget",
+    "count": 9
+  }
+}

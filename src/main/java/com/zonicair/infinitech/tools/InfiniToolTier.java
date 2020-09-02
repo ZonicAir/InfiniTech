@@ -1,6 +1,6 @@
 package com.zonicair.infinitech.tools;
 
-import com.zonicair.infinitech.util.RegistryHandler;
+import com.zonicair.infinitech.init.ItemRegistryHandler;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -11,15 +11,15 @@ public enum InfiniToolTier implements IItemTier {
     //Tool Tiers
         //Mining Tier, Durability(Uses), Efficiency, Base AttackDamage (1 + this.attackDamage + damage in item registry) , enchantability, repairMaterial
     INFINI(3, 1600, 9.0F, 4.0F, 22, () -> {
-        return Ingredient.fromItems(RegistryHandler.INFINI_INGOT.get());
+        return Ingredient.fromItems(ItemRegistryHandler.INFINI_INGOT.get());
     }),
 
     REFINED_INFINI(4, 3200, 15.0F, 8.0F, 33, () -> {
-        return Ingredient.fromItems(RegistryHandler.REFINED_INFINI_INGOT.get());
+        return Ingredient.fromItems(ItemRegistryHandler.REFINED_INFINI_INGOT.get());
     }),
 
     REINFORCED_INFINI(5, 6400, 30.0F, 16.0F, 42, () -> {
-        return Ingredient.fromItems(RegistryHandler.REINFORCED_INFINI_INGOT.get());
+        return Ingredient.fromItems(ItemRegistryHandler.REINFORCED_INFINI_INGOT.get());
     });
     private final int harvestLevel;
     private final int maxUses;

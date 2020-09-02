@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "itech:blocks/infini_fuel_block"
+  }
+}

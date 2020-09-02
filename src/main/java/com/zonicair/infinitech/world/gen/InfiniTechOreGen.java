@@ -1,11 +1,8 @@
 package com.zonicair.infinitech.world.gen;
 
-import com.sun.org.apache.xpath.internal.operations.Or;
 import com.zonicair.infinitech.InfiniTech;
-import com.zonicair.infinitech.util.RegistryHandler;
+import com.zonicair.infinitech.init.BlockRegistryHandler;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.pattern.BlockMatcher;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
@@ -13,7 +10,6 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.ConfiguredPlacement;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -29,11 +25,12 @@ public class InfiniTechOreGen {
     public static void generateOres(FMLLoadCompleteEvent event){
         for(Biome biome : ForgeRegistries.BIOMES){
             if(biome.getCategory() == Biome.Category.NETHER){
-                genOre(biome, 1, 1, 0, 10, OreFeatureConfig.FillerBlockType.NETHERRACK, RegistryHandler.FIERY_INFINI_ORE.get().getDefaultState(), 1);
+                genOre(biome, 1, 1, 0, 10, OreFeatureConfig.FillerBlockType.NETHERRACK, BlockRegistryHandler.FIERY_INFINI_ORE.get().getDefaultState(), 1);
             } else if(biome.getCategory() == Biome.Category.THEEND){
 
             } else {
-                genOre(biome, 1, 1, 0, 18, OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandler.INFINI_ORE.get().getDefaultState(), 2);
+                genOre(biome, 1, 1, 0, 18, OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 2);
+                genOre(biome, 7, 25, 0, 75, OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockRegistryHandler.INFINI_FUEL_ORE.get().getDefaultState(), 4);
             }
         }
     }

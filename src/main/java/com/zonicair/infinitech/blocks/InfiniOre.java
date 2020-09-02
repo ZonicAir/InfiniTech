@@ -1,11 +1,12 @@
 package com.zonicair.infinitech.blocks;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class InfiniOre extends Block {
+public class InfiniOre extends OreBlock {
 
     public InfiniOre() {
 

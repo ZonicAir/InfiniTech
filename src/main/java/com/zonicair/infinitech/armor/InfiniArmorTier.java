@@ -1,7 +1,7 @@
 package com.zonicair.infinitech.armor;
 
 import com.zonicair.infinitech.InfiniTech;
-import com.zonicair.infinitech.util.RegistryHandler;
+import com.zonicair.infinitech.init.ItemRegistryHandler;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -15,21 +15,20 @@ import java.util.function.Supplier;
 public enum InfiniArmorTier implements IArmorMaterial {
 
     //layer path is itech:infini_armor_layer_1/2
-    INFINI_ARMOR_TIER(InfiniTech.MOD_ID + ":infini_armor", 40, new int[] {4, 10, 8, 5}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.5F, 0.3F, () -> {
-        return Ingredient.fromItems(RegistryHandler.INFINI_INGOT.get());
+    INFINI_ARMOR_TIER(InfiniTech.MOD_ID + ":infini_armor", 40, new int[]{4, 10, 8, 5}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.5F, 0.3F, () -> {
+        return Ingredient.fromItems(ItemRegistryHandler.INFINI_INGOT.get());
     }),
 
-    REFINED_INFINI_ARMOR_TIER(InfiniTech.MOD_ID + ":refined_infini_armor", 80, new int[] {8, 20, 16, 10}, 40, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F, 0.6F, () -> {
-        return Ingredient.fromItems(RegistryHandler.REFINED_INFINI_INGOT.get());
+    REFINED_INFINI_ARMOR_TIER(InfiniTech.MOD_ID + ":refined_infini_armor", 80, new int[]{8, 20, 16, 10}, 40, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F, 0.6F, () -> {
+        return Ingredient.fromItems(ItemRegistryHandler.REFINED_INFINI_INGOT.get());
     }),
 
-    REINFORCED_INFINI_ARMOR_TIER(InfiniTech.MOD_ID + ":reinforced_infini_armor", 160, new int[] {16, 40, 32, 20}, 80, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F, 1.2F, () -> {
-        return Ingredient.fromItems(RegistryHandler.REINFORCED_INFINI_INGOT.get());
-    })
-    ;
+    REINFORCED_INFINI_ARMOR_TIER(InfiniTech.MOD_ID + ":reinforced_infini_armor", 160, new int[]{16, 40, 32, 20}, 80, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F, 1.2F, () -> {
+        return Ingredient.fromItems(ItemRegistryHandler.REINFORCED_INFINI_INGOT.get());
+    });
 
     //boots, leggings, chestplate, helmet
-    private static final int[] MAX_DAMAGE_ARRAY = new int[] {11, 16, 15, 13};
+    private static final int[] MAX_DAMAGE_ARRAY = new int[]{11, 16, 15, 13};
     private final String name;
     private final int maxDamageFactor;
     private final int[] damageReductionAmountArray;
@@ -88,7 +87,7 @@ public enum InfiniArmorTier implements IArmorMaterial {
     }
 
     @Override
-    public float func_230304_f_() {
+    public float getKnockbackResistance() {
         return this.knockbackResistance;
     }
 }
