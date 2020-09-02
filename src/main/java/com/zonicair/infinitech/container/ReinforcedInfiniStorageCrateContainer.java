@@ -1,3 +1,4 @@
+
 package com.zonicair.infinitech.container;
 
 import com.zonicair.infinitech.init.BlockRegistryHandler;
@@ -63,7 +64,7 @@ public class ReinforcedInfiniStorageCrateContainer extends Container {
 
 
     public ReinforcedInfiniStorageCrateContainer(final int windowID, final PlayerInventory playerInventory, final PacketBuffer data){
-            this(windowID, playerInventory, getTileEntity(playerInventory, data));
+        this(windowID, playerInventory, getTileEntity(playerInventory, data));
     }
     @Override
     public boolean canInteractWith(PlayerEntity playerIn) {

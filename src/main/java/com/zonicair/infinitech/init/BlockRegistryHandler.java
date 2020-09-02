@@ -29,7 +29,7 @@ public class BlockRegistryHandler {
     //Chests
     public static final RegistryObject<Block> INFINI_STORAGE_CRATE = BLOCKS.register("infini_storage_crate", InfiniStorageCrate::new);
     public static final RegistryObject<Block> REFINED_INFINI_STORAGE_CRATE = BLOCKS.register("refined_infini_storage_crate", RefinedInfiniStorageCrate::new);
-    public static final RegistryObject<Block> REINFORCED_INFINI_STORAGE_CRATE = BLOCKS.register("reinforced_infini_storage_crate", RefinedInfiniStorageCrate::new);
+    public static final RegistryObject<Block> REINFORCED_INFINI_STORAGE_CRATE = BLOCKS.register("reinforced_infini_storage_crate", ReinforcedInfiniStorageCrate::new);
 
     //Machines
     public static final RegistryObject<Block> INFINI_FURNACE = BLOCKS.register("infini_furnace", InfiniFurnace::new);

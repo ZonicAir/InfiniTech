@@ -83,7 +83,7 @@ public class RefinedInfiniStorageCrateContainer extends Container {
                 if(!this.mergeItemStack(itemstack1, 81, this.inventorySlots.size(), true)){
                     return ItemStack.EMPTY;
                 }
-            }else if(!this.mergeItemStack(itemstack1, 0, 81, false)){
+            }else if(!this.mergeItemStack(itemstack1, 0, 54, false)){
                 return ItemStack.EMPTY;
             }
             if(itemstack1.isEmpty()){

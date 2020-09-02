@@ -33,8 +33,7 @@ public class RefinedInfiniStorageCrateScreen extends ContainerScreen<RefinedInfi
     }
 
     @Override
-    protected void drawGuiContainerForegroundLayer(MatrixStack stack, int mouseX, int mouseY) {   
-        super.func_230459_a_(stack, mouseX, mouseY);
+    protected void drawGuiContainerForegroundLayer(MatrixStack stack, int mouseX, int mouseY) {
         this.font.drawString(stack, this.title.getString(), 8.0F, 6.0F, 4210752);
         this.font.drawString(stack, this.playerInventory.getDisplayName().getString(), 8.0F, 182.0F, 4210752);
 

@@ -1,6 +1,7 @@
 package com.zonicair.infinitech.tileentity;
 
 import com.zonicair.infinitech.blocks.InfiniStorageCrate;
+import com.zonicair.infinitech.blocks.RefinedInfiniStorageCrate;
 import com.zonicair.infinitech.container.RefinedInfiniStorageCrateContainer;
 import com.zonicair.infinitech.init.InfiniTileEntityTypes;
 import net.minecraft.block.Block;
@@ -125,7 +126,7 @@ public class RefinedInfiniStorageCrateTileEntity extends LockableLootTileEntity 
 
     protected void onOpenOrClose(){
         Block block = this.getBlockState().getBlock();
-        if(block instanceof InfiniStorageCrate){
+        if(block instanceof RefinedInfiniStorageCrate){
             this.world.addBlockEvent(this.pos, block, 1, this.numPlayersUsing);
             this.world.notifyNeighborsOfStateChange(this.pos, block);
         }
