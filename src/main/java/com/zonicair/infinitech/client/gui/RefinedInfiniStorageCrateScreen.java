@@ -45,7 +45,7 @@ public class RefinedInfiniStorageCrateScreen extends ContainerScreen<RefinedInfi
         this.minecraft.getTextureManager().bindTexture(BACKGROUND_TEXTURE);
         int x = (this.width - this.xSize) / 2;
         int y = (this.height - this.ySize) / 2;
-        this.blit(stack, x, y,0,0, this.xSize, this.ySize);
+        this.blit(stack, guiLeft, guiTop,0,0, this.xSize, this.ySize);
     }
 
 
