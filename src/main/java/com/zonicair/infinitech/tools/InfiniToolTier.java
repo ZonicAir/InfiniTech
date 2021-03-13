@@ -18,8 +18,8 @@ public enum InfiniToolTier implements IItemTier {
         return Ingredient.fromItems(ItemRegistryHandler.REFINED_INFINI_INGOT.get());
     }),
 
-    REINFORCED_INFINI(5, 6400, 30.0F, 16.0F, 42, () -> {
-        return Ingredient.fromItems(ItemRegistryHandler.REINFORCED_INFINI_INGOT.get());
+    PERPETUAL_INFINI(5, 6400, 30.0F, 16.0F, 42, () -> {
+        return Ingredient.fromItems(ItemRegistryHandler.PERPETUAL_INFINI_INGOT.get());
     });
     private final int harvestLevel;
     private final int maxUses;

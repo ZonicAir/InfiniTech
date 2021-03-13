@@ -23,8 +23,8 @@ public enum InfiniArmorTier implements IArmorMaterial {
         return Ingredient.fromItems(ItemRegistryHandler.REFINED_INFINI_INGOT.get());
     }),
 
-    REINFORCED_INFINI_ARMOR_TIER(InfiniTech.MOD_ID + ":reinforced_infini_armor", 160, new int[]{16, 40, 32, 20}, 80, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F, 1.2F, () -> {
-        return Ingredient.fromItems(ItemRegistryHandler.REINFORCED_INFINI_INGOT.get());
+    PERPETUAL_INFINI_ARMOR_TIER(InfiniTech.MOD_ID + ":perpetual_infini_armor", 160, new int[]{16, 40, 32, 20}, 80, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F, 1.2F, () -> {
+        return Ingredient.fromItems(ItemRegistryHandler.PERPETUAL_INFINI_INGOT.get());
     });
 
     //boots, leggings, chestplate, helmet

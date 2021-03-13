@@ -91,7 +91,7 @@ public class InfiniStorageCrateTileEntity extends LockableLootTileEntity {
         double dx = (double)this.pos.getX() + 0.5D;
         double dy = (double)this.pos.getY() + 0.5D;
         double dz = (double)this.pos.getZ() + 0.5D;
-        this.world.playSound((PlayerEntity)null, dx, dy, dz, sound, SoundCategory.BLOCKS, 0.5F, this.world.rand.nextFloat()* 0.1f + 0.9f);
+        this.world.playSound((PlayerEntity)null, dx, dy, dz, sound, SoundCategory.BLOCKS, 0.75F, this.world.rand.nextFloat()* 0.1f + 0.9f);
     }
 
     @Override

@@ -31,13 +31,13 @@ public class ArmorItemRegistryHandler {
     public static final RegistryObject<ArmorItem> REFINED_INFINI_BOOTS = ITEMS.register("refined_infini_boots", () ->
             new ArmorItem(InfiniArmorTier.REFINED_INFINI_ARMOR_TIER, EquipmentSlotType.FEET, new Item.Properties().group(InfiniTech.TAB)));
 
-    public static final RegistryObject<ArmorItem> REINFORCED_INFINI_HELMET = ITEMS.register("reinforced_infini_helmet", () ->
-            new ArmorItem(InfiniArmorTier.REINFORCED_INFINI_ARMOR_TIER, EquipmentSlotType.HEAD, new Item.Properties().group(InfiniTech.TAB)));
-    public static final RegistryObject<ArmorItem> REINFORCED_INFINI_CHESTPLATE = ITEMS.register("reinforced_infini_chestplate", () ->
-            new ArmorItem(InfiniArmorTier.REINFORCED_INFINI_ARMOR_TIER, EquipmentSlotType.CHEST, new Item.Properties().group(InfiniTech.TAB)));
-    public static final RegistryObject<ArmorItem> REINFORCED_INFINI_LEGGINGS = ITEMS.register("reinforced_infini_leggings", () ->
-            new ArmorItem(InfiniArmorTier.REINFORCED_INFINI_ARMOR_TIER, EquipmentSlotType.LEGS, new Item.Properties().group(InfiniTech.TAB)));
-    public static final RegistryObject<ArmorItem> REINFORCED_INFINI_BOOTS = ITEMS.register("reinforced_infini_boots", () ->
-            new ArmorItem(InfiniArmorTier.REINFORCED_INFINI_ARMOR_TIER, EquipmentSlotType.FEET, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<ArmorItem> PERPETUAL_INFINI_HELMET = ITEMS.register("perpetual_infini_helmet", () ->
+            new ArmorItem(InfiniArmorTier.PERPETUAL_INFINI_ARMOR_TIER, EquipmentSlotType.HEAD, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<ArmorItem> PERPETUAL_INFINI_CHESTPLATE = ITEMS.register("perpetual_infini_chestplate", () ->
+            new ArmorItem(InfiniArmorTier.PERPETUAL_INFINI_ARMOR_TIER, EquipmentSlotType.CHEST, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<ArmorItem> PERPETUAL_INFINI_LEGGINGS = ITEMS.register("perpetual_infini_leggings", () ->
+            new ArmorItem(InfiniArmorTier.PERPETUAL_INFINI_ARMOR_TIER, EquipmentSlotType.LEGS, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<ArmorItem> PERPETUAL_INFINI_BOOTS = ITEMS.register("perpetual_infini_boots", () ->
+            new ArmorItem(InfiniArmorTier.PERPETUAL_INFINI_ARMOR_TIER, EquipmentSlotType.FEET, new Item.Properties().group(InfiniTech.TAB)));
 
 }

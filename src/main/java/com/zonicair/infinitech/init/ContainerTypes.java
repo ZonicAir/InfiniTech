@@ -3,7 +3,7 @@ package com.zonicair.infinitech.init;
 import com.zonicair.infinitech.InfiniTech;
 import com.zonicair.infinitech.container.InfiniStorageCrateContainer;
 import com.zonicair.infinitech.container.RefinedInfiniStorageCrateContainer;
-import com.zonicair.infinitech.container.ReinforcedInfiniStorageCrateContainer;
+import com.zonicair.infinitech.container.PerpetualInfiniStorageCrateContainer;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.fml.RegistryObject;
@@ -16,6 +16,6 @@ public class ContainerTypes {
 
     public static final RegistryObject<ContainerType<InfiniStorageCrateContainer>> INFINI_STORAGE_CRATE_CONTAINER = INFINI_CONTAINER_TYPES.register("infini_storage_crate", () -> IForgeContainerType.create(InfiniStorageCrateContainer::new));
     public static final RegistryObject<ContainerType<RefinedInfiniStorageCrateContainer>> REFINED_INFINI_STORAGE_CRATE_CONTAINER = INFINI_CONTAINER_TYPES.register("refined_infini_storage_crate", () -> IForgeContainerType.create(RefinedInfiniStorageCrateContainer::new));
-    public static final RegistryObject<ContainerType<ReinforcedInfiniStorageCrateContainer>> REINFORCED_INFINI_STORAGE_CRATE_CONTAINER = INFINI_CONTAINER_TYPES.register("reinforced_infini_storage_crate", () -> IForgeContainerType.create(ReinforcedInfiniStorageCrateContainer::new));
+    public static final RegistryObject<ContainerType<PerpetualInfiniStorageCrateContainer>> PERPETUAL_INFINI_STORAGE_CRATE_CONTAINER = INFINI_CONTAINER_TYPES.register("perpetual_infini_storage_crate", () -> IForgeContainerType.create(PerpetualInfiniStorageCrateContainer::new));
 
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "itech:perpetual_infini_dust"
+  },
+  "result": "itech:perpetual_infini_ingot",
+  "experience": 2.0,
+  "cookingtime": 800
+}
+
+
+
+

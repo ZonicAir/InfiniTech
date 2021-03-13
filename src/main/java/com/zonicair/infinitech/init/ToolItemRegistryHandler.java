@@ -15,7 +15,7 @@ public class ToolItemRegistryHandler {
     //Tool Rods
     public static final RegistryObject<Item> INFINI_ROD = ITEMS.register("infini_rod", ItemBase::new);
     public static final RegistryObject<Item> REFINED_INFINI_ROD = ITEMS.register("refined_infini_rod", ItemBase::new);
-    public static final RegistryObject<Item> REINFORCED_INFINI_ROD = ITEMS.register("reinforced_infini_rod", ItemBase::new);
+    public static final RegistryObject<Item> PERPETUAL_INFINI_ROD = ITEMS.register("perpetual_infini_rod", ItemBase::new);
 
     //Tools (Attack speed is 4 - x, where 4 is the longest
     public static final RegistryObject<SwordItem> INFINI_SWORD = ITEMS.register("infini_sword", () ->
@@ -41,16 +41,16 @@ public class ToolItemRegistryHandler {
     public static final RegistryObject<HoeItem> REFINED_INFINI_HOE = ITEMS.register("refined_infini_hoe", () ->
             new HoeItem(InfiniToolTier.REFINED_INFINI, 4, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
 
-    public static final RegistryObject<SwordItem> REINFORCED_INFINI_SWORD = ITEMS.register("reinforced_infini_sword", () ->
-            new SwordItem(InfiniToolTier.REINFORCED_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
-    public static final RegistryObject<PickaxeItem> REINFORCED_INFINI_PICKAXE = ITEMS.register("reinforced_infini_pickaxe", () ->
-            new PickaxeItem(InfiniToolTier.REINFORCED_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
-    public static final RegistryObject<ShovelItem> REINFORCED_INFINI_SHOVEL = ITEMS.register("reinforced_infini_shovel", () ->
-            new ShovelItem(InfiniToolTier.REINFORCED_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
-    public static final RegistryObject<AxeItem> REINFORCED_INFINI_AXE = ITEMS.register("reinforced_infini_axe", () ->
-            new AxeItem(InfiniToolTier.REINFORCED_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
-    public static final RegistryObject<HoeItem> REINFORCED_INFINI_HOE = ITEMS.register("reinforced_infini_hoe", () ->
-            new HoeItem(InfiniToolTier.REINFORCED_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<SwordItem> PERPETUAL_INFINI_SWORD = ITEMS.register("perpetual_infini_sword", () ->
+            new SwordItem(InfiniToolTier.PERPETUAL_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<PickaxeItem> PERPETUAL_INFINI_PICKAXE = ITEMS.register("perpetual_infini_pickaxe", () ->
+            new PickaxeItem(InfiniToolTier.PERPETUAL_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<ShovelItem> PERPETUAL_INFINI_SHOVEL = ITEMS.register("perpetual_infini_shovel", () ->
+            new ShovelItem(InfiniToolTier.PERPETUAL_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<AxeItem> PERPETUAL_INFINI_AXE = ITEMS.register("perpetual_infini_axe", () ->
+            new AxeItem(InfiniToolTier.PERPETUAL_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
+    public static final RegistryObject<HoeItem> PERPETUAL_INFINI_HOE = ITEMS.register("perpetual_infini_hoe", () ->
+            new HoeItem(InfiniToolTier.PERPETUAL_INFINI, 8, -3.0F, new Item.Properties().group(InfiniTech.TAB)));
 
 
 

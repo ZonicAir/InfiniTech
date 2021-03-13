@@ -4,12 +4,17 @@ import com.zonicair.infinitech.InfiniTech;
 import com.zonicair.infinitech.init.BlockRegistryHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.template.RuleTest;
 import net.minecraft.world.gen.placement.ConfiguredPlacement;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.TopSolidRangeConfig;
+import net.minecraftforge.common.world.BiomeGenerationSettingsBuilder;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -22,24 +27,24 @@ public class InfiniTechOreGen {
     public static OreFeatureConfig.FillerBlockType END_STONE = OreFeatureConfig.FillerBlockType.create("END_STONE", "end_stone", new BlockMatcher(Blocks.END_STONE));
     */
     @SubscribeEvent
-    public static void generateOres(FMLLoadCompleteEvent event){
-        for(Biome biome : ForgeRegistries.BIOMES){
-            if(biome.getCategory() == Biome.Category.NETHER){
-                genOre(biome, 1, 1, 0, 10, OreFeatureConfig.FillerBlockType.NETHERRACK, BlockRegistryHandler.FIERY_INFINI_ORE.get().getDefaultState(), 1);
-            } else if(biome.getCategory() == Biome.Category.THEEND){
+    public static void generateOres(final BiomeLoadingEvent event){
+            if(event.getCategory().equals(Biome.Category.NETHER)){
+
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.FIERY_INFINI_ORE.get().getDefaultState(), 5, 0, 10, 1);
+
+            } else if(event.getCategory().equals(Biome.Category.THEEND)){
 
             } else {
-                genOre(biome, 1, 1, 0, 18, OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 2);
-                genOre(biome, 7, 25, 0, 75, OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockRegistryHandler.INFINI_FUEL_ORE.get().getDefaultState(), 4);
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 5, 0, 18, 2);
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 4, 25, 75, 4);
             }
-        }
+
     }
 
-    private static void genOre(Biome biome, int count, int bottomOffset, int topOffset, int max, OreFeatureConfig.FillerBlockType filler, BlockState defaultBlockState, int size){
-        CountRangeConfig range = new CountRangeConfig(count, bottomOffset, topOffset, max);
-        OreFeatureConfig feature = new OreFeatureConfig(filler, defaultBlockState, size);
-        ConfiguredPlacement config = Placement.COUNT_RANGE.configure(range);
-        biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(feature).withPlacement(config));
+    private static void genOre(BiomeGenerationSettingsBuilder settings, RuleTest fillerType, BlockState state, int veinSize, int minHeight, int maxHeight, int count){
+        settings.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
+                Feature.ORE.withConfiguration(new OreFeatureConfig(fillerType, state, veinSize))
+                        .withPlacement(Placement.RANGE.configure(new TopSolidRangeConfig(minHeight, 0, maxHeight))).square().count());
     }
 
 }

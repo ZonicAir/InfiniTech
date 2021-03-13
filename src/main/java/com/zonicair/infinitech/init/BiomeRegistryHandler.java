@@ -18,7 +18,7 @@ public class BiomeRegistryHandler {
 
     public static final RegistryObject<Biome> INFINI_FOREST = BIOMES.register("infini_forest", () -> new InfiniForest(new Biome.Builder().precipitation(Biome.RainType.RAIN).downfall(0.01F).scale(.2F).temperature(0.5F)   // scale .2 depth .2
             //New Biome Ambience                         setFogColor             setMusic       setAdditionsSound  setMoodSound     setParticle        setWaterColor       setWaterFogColor       setAmbientSound     .build
-            .func_235097_a_((new BiomeAmbience.Builder().setFogColor(48383)/*.func_235240_a_().func_235242_a_().func_235243_a_().func_235244_a_()*/.setWaterColor(255).setWaterFogColor(25343)/*.func_235241_a_()*/.build()))
+            .setEffects((new BiomeAmbience.Builder().setFogColor(48383)/*.func_235240_a_().func_235242_a_().func_235243_a_().func_235244_a_()*/.setWaterColor(255).setWaterFogColor(25343)/*.func_235241_a_()*/.build()))
             .surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(BlockRegistryHandler.INFINI_GRASS_BLOCK.get().getDefaultState(), BlockRegistryHandler.INFINI_DIRT_BLOCK.get().getDefaultState(), Blocks.CLAY.getDefaultState()))
             .category(Biome.Category.FOREST).downfall(0.3F).depth(.2F).parent(null)));
 

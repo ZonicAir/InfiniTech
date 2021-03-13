@@ -39,13 +39,15 @@ public class RefinedInfiniStorageCrateScreen extends ContainerScreen<RefinedInfi
 
     }
 
+
     @Override
     protected void drawGuiContainerBackgroundLayer(MatrixStack stack, float partialTicks, int mouseX, int mouseY) {
         RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
         this.minecraft.getTextureManager().bindTexture(BACKGROUND_TEXTURE);
         int x = (this.width - this.xSize) / 2;
         int y = (this.height - this.ySize) / 2;
-        this.blit(stack, guiLeft, guiTop,0,0, this.xSize, this.ySize);
+        //if texture is not 256x256, specific in the last two parameters
+        this.blit(stack, guiLeft, guiTop,0,0, this.xSize, this.ySize, 256, 276);
     }
 
 

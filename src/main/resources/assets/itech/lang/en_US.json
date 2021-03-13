@@ -3,21 +3,21 @@
 
   "item.itech.infini_nugget": "Infini Nugget",
   "item.itech.refined_infini_nugget": "Refined Infini Nugget",
-  "item.itech.reinforced_infini_nugget": "Reinforced Infini Nugget",
+  "item.itech.perpetual_infini_nugget": "Perpetual Infini Nugget",
 
   "item.itech.infini_dust": "Infini Dust",
   "item.itech.compressed_infini_dust": "Compressed Infini Dust",
   "item.itech.refined_infini_dust": "Refined Infini Dust",
-  "item.itech.reinforced_infini_dust": "Reinforced Infini Dust",
+  "item.itech.perpetual_infini_dust": "Perpetual Infini Dust",
   "item.itech.fiery_infini_dust": "Fiery Infini Dust",
 
   "item.itech.infini_ingot": "Infini Ingot",
   "item.itech.refined_infini_ingot": "Refined Infini Ingot",
-  "item.itech.reinforced_infini_ingot": "Reinforced Infini Ingot",
+  "item.itech.perpetual_infini_ingot": "Perpetual Infini Ingot",
 
   "item.itech.infini_rod": "Infini Rod",
   "item.itech.refined_infini_rod": "Refined Infini Rod",
-  "item.itech.reinforced_infini_rod": "Reinforced Infini Rod",
+  "item.itech.perpetual_infini_rod": "Perpetual Infini Rod",
 
   "item.itech.infini_sword": "Infini Sword",
   "item.itech.infini_pickaxe": "Infini Pickaxe",
@@ -31,11 +31,11 @@
   "item.itech.refined_infini_axe": "Refined Infini Axe",
   "item.itech.refined_infini_hoe": "Refined Infini Hoe",
 
-  "item.itech.reinforced_infini_sword": "Reinforced Infini Sword",
-  "item.itech.reinforced_infini_pickaxe": "Reinforced Infini Pickaxe",
-  "item.itech.reinforced_infini_shovel": "Reinforced Infini Shovel",
-  "item.itech.reinforced_infini_axe": "Reinforced Infini Axe",
-  "item.itech.reinforced_infini_hoe": "Reinforced Infini Hoe",
+  "item.itech.perpetual_infini_sword": "Perpetual Infini Sword",
+  "item.itech.perpetual_infini_pickaxe": "Perpetual Infini Pickaxe",
+  "item.itech.perpetual_infini_shovel": "Perpetual Infini Shovel",
+  "item.itech.perpetual_infini_axe": "Perpetual Infini Axe",
+  "item.itech.perpetual_infini_hoe": "Perpetual Infini Hoe",
 
   "item.itech.infini_helmet": "Infini Helmet",
   "item.itech.infini_chestplate": "Infini Chestplate",
@@ -47,10 +47,10 @@
   "item.itech.refined_infini_leggings": "Refined Infini Leggings",
   "item.itech.refined_infini_boots": "Refined Infini Boots",
 
-  "item.itech.reinforced_infini_helmet": "Reinforced Infini Helmet",
-  "item.itech.reinforced_infini_chestplate": "Reinforced Infini Chestplate",
-  "item.itech.reinforced_infini_leggings": "Reinforced Infini Leggings",
-  "item.itech.reinforced_infini_boots": "Reinforced Infini Boots",
+  "item.itech.perpetual_infini_helmet": "Perpetual Infini Helmet",
+  "item.itech.perpetual_infini_chestplate": "Perpetual Infini Chestplate",
+  "item.itech.perpetual_infini_leggings": "Perpetual Infini Leggings",
+  "item.itech.perpetual_infini_boots": "Perpetual Infini Boots",
 
   "item.itech.infini_fuel": "Infini Fuel",
 
@@ -60,23 +60,19 @@
   "block.itech.infini_fuel_block": "Block of Infini Fuel",
   "block.itech.fiery_infini_ore": "Fiery Infini Ore",
   "block.itech.refined_infini_block": "Refined Infini Block",
-  "block.itech.reinforced_infini_block": "Reinforced Infini Block",
+  "block.itech.perpetual_infini_block": "Perpetual Infini Block",
   "block.itech.infini_dirt": "Infini Dirt",
   "block.itech.infini_grass_block": "Infini Grass",
 
 
-  "block.itech.infini_wood": "Infini Wood",
+  "block.itech.infini_wood_log": "Infini Log",
   "block.itech.infini_wood_planks": "Infini Wood Planks",
-  "block.itech.infini_stairs": "Infini Stairs",
-  "block.itech.infini_fence": "Infini Fence",
-  "block.itech.infini_button": "Infini Button",
-  "block.itech.infini_pressure_plate": "Infini Pressure Plate",
-
+  "block.itech.infini_leaves": "Infini Leaves",
   "block.itech.infini_storage_crate": "Infini Storage Crate",
   "container.infini_storage_crate": "Infini Storage Crate",
 
-  "block.itech.reinforced_infini_storage_crate": "Reinforced Infini Storage Crate",
-  "container.reinforced_infini_storage_crate": "Reinforced Infini Storage Crate",
+  "block.itech.perpetual_infini_storage_crate": "Perpetual Infini Storage Crate",
+  "container.perpetual_infini_storage_crate": "Perpetual Infini Storage Crate",
   
   "block.itech.refined_infini_storage_crate": "Refined Infini Storage Crate",
   "container.refined_infini_storage_crate": "Refined Infini Storage Crate",

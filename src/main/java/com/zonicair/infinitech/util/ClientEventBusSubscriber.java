@@ -3,7 +3,7 @@ package com.zonicair.infinitech.util;
 import com.zonicair.infinitech.InfiniTech;
 import com.zonicair.infinitech.client.gui.InfiniStorageCrateScreen;
 import com.zonicair.infinitech.client.gui.RefinedInfiniStorageCrateScreen;
-import com.zonicair.infinitech.client.gui.ReinforcedInfiniStorageCrateScreen;
+import com.zonicair.infinitech.client.gui.PerpetualInfiniStorageCrateScreen;
 import com.zonicair.infinitech.init.ContainerTypes;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.api.distmarker.Dist;
@@ -18,7 +18,7 @@ public class ClientEventBusSubscriber {
     public static void clientSetup(FMLClientSetupEvent event){
         ScreenManager.registerFactory(ContainerTypes.INFINI_STORAGE_CRATE_CONTAINER.get(), InfiniStorageCrateScreen::new);
         ScreenManager.registerFactory(ContainerTypes.REFINED_INFINI_STORAGE_CRATE_CONTAINER.get(), RefinedInfiniStorageCrateScreen::new);
-        ScreenManager.registerFactory(ContainerTypes.REINFORCED_INFINI_STORAGE_CRATE_CONTAINER.get(), ReinforcedInfiniStorageCrateScreen::new);
+        ScreenManager.registerFactory(ContainerTypes.PERPETUAL_INFINI_STORAGE_CRATE_CONTAINER.get(), PerpetualInfiniStorageCrateScreen::new);
 
     }
 }

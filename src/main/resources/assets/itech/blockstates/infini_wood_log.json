@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "axis=x": {"model": "itech:blocks/infini_wood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "itech:blocks/infini_wood_log"
+    },
+    "axis=z": {
+      "model": "itech:blocks/infini_wood_log_horizontal",
+      "x": 90
+    }
+  }
+}

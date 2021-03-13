@@ -23,5 +23,4 @@ public class InfiniBlock extends Block {
 
     }
 
-
 }
