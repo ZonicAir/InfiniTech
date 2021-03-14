@@ -2,7 +2,7 @@ package com.zonicair.infinitech.init;
 
 import com.zonicair.infinitech.InfiniTech;
 import com.zonicair.infinitech.world.BiomeMaker;
-import com.zonicair.infinitech.world.biomes.InfiniForest;
+//import com.zonicair.infinitech.world.biomes.InfiniForest;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.ResourceLocation;
@@ -31,7 +31,7 @@ public class BiomeRegistryHandler {
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void biomeLoading(BiomeLoadingEvent event){
         if(event.getName() == (INFINI_FOREST.get().getRegistryName())){
-            BiomeManager.addBiome(BiomeManager.BiomeType.COOL, new BiomeManager.BiomeEntry(INFINI_FOREST_KEY, 1));
+            BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(INFINI_FOREST_KEY, 10));
             BiomeDictionary.addTypes(INFINI_FOREST_KEY, BiomeDictionary.Type.FOREST);
         }
     }

@@ -29,7 +29,7 @@ public class InfiniStorageCrateScreen extends ContainerScreen<InfiniStorageCrate
     public void render(MatrixStack matrixStack, int mouseX, int mouseY, float partialTicks) {
         this.renderBackground(matrixStack);
         super.render(matrixStack, mouseX, mouseY, partialTicks);
-        this.func_230459_a_(matrixStack, mouseX, mouseY); // @mcp: func_230459_a_ = renderHoveredToolTip
+        this.renderHoveredTooltip(matrixStack, mouseX, mouseY); // @mcp: func_230459_a_ = renderHoveredToolTip
     }
 
     @Override

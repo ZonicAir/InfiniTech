@@ -1,12 +1,14 @@
 package com.zonicair.infinitech;
 
 import com.zonicair.infinitech.init.*;
+import com.zonicair.infinitech.world.gen.InfiniTechOreGen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -34,6 +36,7 @@ public class InfiniTech
         ContainerTypes.INFINI_CONTAINER_TYPES.register(event);
         BiomeRegistryHandler.BIOMES.register(event);
 
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, InfiniTechOreGen::generateOres);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
