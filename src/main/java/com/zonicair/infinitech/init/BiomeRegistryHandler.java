@@ -25,6 +25,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class BiomeRegistryHandler {
     public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, InfiniTech.MOD_ID);
 
+    //public static final Biome.Category INFINI_FOREST_CAT =
     public static final RegistryObject<Biome> INFINI_FOREST = BIOMES.register("infini_forest", BiomeMaker::makeInfiniForestBiome);
     public static final RegistryKey<Biome> INFINI_FOREST_KEY = RegistryKey.getOrCreateKey(Registry.BIOME_KEY,
             new ResourceLocation(InfiniTech.MOD_ID, "infini_forest"));
@@ -33,7 +34,7 @@ public class BiomeRegistryHandler {
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void biomeLoading(BiomeLoadingEvent event){
         if(event.getName().equals(INFINI_FOREST.get().getRegistryName())){
-            BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(INFINI_FOREST_KEY, 50));
+            BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(INFINI_FOREST_KEY, 1));
             BiomeDictionary.addTypes(INFINI_FOREST_KEY, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.RARE);
         }
     }

@@ -10,7 +10,6 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 
 public class BiomeMaker {
 
-
     public static Biome makeInfiniForestBiome() {
         BiomeGenerationSettings.Builder generationSettings = genSettings(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
 
@@ -24,7 +23,7 @@ public class BiomeMaker {
         MobSpawnInfo.Builder spawnSettings = new MobSpawnInfo.Builder();
         DefaultBiomeFeatures.withPassiveMobs(spawnSettings);
 
-        return biome(Biome.RainType.NONE, Biome.Category.EXTREME_HILLS, 0.27f, 0.7f, 0.6f, 0.01f,
+        return biome(Biome.RainType.NONE, Biome.Category.FOREST, 0.01f, 0.3f, 0.6f, 0.01f,
                 new BiomeAmbience.Builder().withGrassColor(0x0000FF).setWaterColor(0x00AAFF).setWaterFogColor(0x0000CC)
                         .withFoliageColor(0x0000FF).setFogColor(0x00DDFF).withSkyColor(getSkyForTemp(0.6f)),
                 generationSettings, spawnSettings.build());

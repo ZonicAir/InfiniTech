@@ -1,6 +1,7 @@
 package com.zonicair.infinitech.world.gen;
 
 import com.zonicair.infinitech.InfiniTech;
+import com.zonicair.infinitech.init.BiomeRegistryHandler;
 import com.zonicair.infinitech.init.BlockRegistryHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;
@@ -25,11 +26,15 @@ public class InfiniTechOreGen {
 
                 genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.FIERY_INFINI_ORE.get().getDefaultState(), 5, 0, 10, 1);
 
-            } else if(event.getCategory().equals(Biome.Category.THEEND)){
+            } else if(event.getCategory().equals(Biome.Category.THEEND)) {
 
-            } else {
-                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 5, 0, 18, 2);
-                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 4, 25, 75, 4);
+            }else if(event.getName().equals(BiomeRegistryHandler.INFINI_FOREST.get().getRegistryName())) {
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 7, 0, 75, 10);
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_FUEL_ORE.get().getDefaultState(), 15, 0, 120, 20);
+
+            }else{
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 2, 0, 18, 2);
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_FUEL_ORE.get().getDefaultState(), 4, 25, 75, 4);
             }
 
     }
