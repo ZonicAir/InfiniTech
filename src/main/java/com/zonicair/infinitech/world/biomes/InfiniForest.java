@@ -1,5 +1,5 @@
 package com.zonicair.infinitech.world.biomes;
-
+/*
 import com.zonicair.infinitech.init.BlockRegistryHandler;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityClassification;

@@ -32,7 +32,7 @@ public class InfiniTech
         BlockRegistryHandler.BLOCKS.register(event);
         InfiniTileEntityTypes.TILES_ENTITIES.register(event);
         ContainerTypes.INFINI_CONTAINER_TYPES.register(event);
-        //BiomeRegistryHandler.BIOMES.register(event);
+        BiomeRegistryHandler.BIOMES.register(event);
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
@@ -47,7 +47,7 @@ public class InfiniTech
 
     @SubscribeEvent
     public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event) {
-        BiomeRegistryHandler.registerBiomes();
+
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
