@@ -21,7 +21,6 @@ public class BiomeMaker {
         DefaultBiomeFeatures.withAllForestFlowerGeneration(generationSettings);
         DefaultBiomeFeatures.withCommonOverworldBlocks(generationSettings);
         DefaultBiomeFeatures.withStrongholdAndMineshaft(generationSettings);
-
         MobSpawnInfo.Builder spawnSettings = new MobSpawnInfo.Builder();
         DefaultBiomeFeatures.withPassiveMobs(spawnSettings);
 

@@ -18,14 +18,16 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("itech")
-@Mod.EventBusSubscriber(modid = InfiniTech.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@Mod(InfiniTech.MOD_ID)
+//@Mod.EventBusSubscriber(modid = InfiniTech.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class InfiniTech
 {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "itech";
+
     public InfiniTech() {
         IEventBus event = FMLJavaModLoadingContext.get().getModEventBus();
+        event.addListener(this::setup);
 
         ItemRegistryHandler.ITEMS.register(event);
         ArmorItemRegistryHandler.ITEMS.register(event);
@@ -35,10 +37,9 @@ public class InfiniTech
         InfiniTileEntityTypes.TILES_ENTITIES.register(event);
         ContainerTypes.INFINI_CONTAINER_TYPES.register(event);
         BiomeRegistryHandler.BIOMES.register(event);
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, BiomeRegistryHandler::biomeLoading);
 
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, InfiniTechOreGen::generateOres);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -50,7 +51,6 @@ public class InfiniTech
 
     @SubscribeEvent
     public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event) {
-
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

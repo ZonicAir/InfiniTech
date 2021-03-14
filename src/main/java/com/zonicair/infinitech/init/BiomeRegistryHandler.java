@@ -17,9 +17,11 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+@Mod.EventBusSubscriber(modid = InfiniTech.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class BiomeRegistryHandler {
     public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, InfiniTech.MOD_ID);
 
@@ -30,9 +32,9 @@ public class BiomeRegistryHandler {
 
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void biomeLoading(BiomeLoadingEvent event){
-        if(event.getName() == (INFINI_FOREST.get().getRegistryName())){
-            BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(INFINI_FOREST_KEY, 10));
-            BiomeDictionary.addTypes(INFINI_FOREST_KEY, BiomeDictionary.Type.FOREST);
+        if(event.getName().equals(INFINI_FOREST.get().getRegistryName())){
+            BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(INFINI_FOREST_KEY, 50));
+            BiomeDictionary.addTypes(INFINI_FOREST_KEY, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.RARE);
         }
     }
 
@@ -43,7 +45,8 @@ public class BiomeRegistryHandler {
             .category(Biome.Category.FOREST).downfall(0.3F).depth(.2F).parent(null)));
 
 
-
+        */
+    /*
     public static void registerBiomes(){
         registerBiome(INFINI_FOREST.get(),1, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.OVERWORLD);
     }
