@@ -29,8 +29,8 @@ public class InfiniTechOreGen {
             } else if(event.getCategory().equals(Biome.Category.THEEND)) {
 
             }else if(event.getName().equals(BiomeRegistryHandler.INFINI_FOREST.get().getRegistryName())) {
-                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 7, 0, 75, 10);
-                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_FUEL_ORE.get().getDefaultState(), 15, 0, 120, 20);
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 8, 0, 75, 10);
+                genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_FUEL_ORE.get().getDefaultState(), 16, 0, 120, 20);
 
             }else{
                 genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockRegistryHandler.INFINI_ORE.get().getDefaultState(), 2, 0, 18, 2);

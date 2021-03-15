@@ -1,0 +1,25 @@
+ {
+   "type": "minecraft:crafting_shaped",
+   "pattern":
+   [
+     " yx",
+     "yxy",
+     "Xy "
+   ],
+   "key":
+   {
+     "x":
+     {
+       "item": "itech:perpetual_infini_ingot"
+     },
+     "y":
+     {
+       "item": "itech:perpetual_infini_nugget"
+     }
+   },
+   "result":
+   {
+     "item": "itech:perpetual_infini_rod",
+     "count": 1
+   }
+ }

@@ -1,0 +1,25 @@
+ {
+   "type": "minecraft:crafting_shaped",
+   "pattern":
+   [
+     "xx ",
+     "xy ",
+     " y "
+   ],
+   "key":
+   {
+     "x":
+     {
+       "item": "itech:refined_infini_ingot"
+     },
+     "y":
+     {
+       "item": "itech:refined_infini_rod"
+     }
+   },
+   "result":
+   {
+     "item": "itech:refined_infini_axe",
+     "count": 1
+   }
+ }

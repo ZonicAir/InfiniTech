@@ -37,8 +37,8 @@ public class InfiniTech
         InfiniTileEntityTypes.TILES_ENTITIES.register(event);
         ContainerTypes.INFINI_CONTAINER_TYPES.register(event);
         BiomeRegistryHandler.BIOMES.register(event);
-        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, BiomeRegistryHandler::biomeLoading);
 
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, BiomeRegistryHandler::biomeLoading);
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, InfiniTechOreGen::generateOres);
 
         MinecraftForge.EVENT_BUS.register(this);
